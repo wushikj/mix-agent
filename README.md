@@ -16,8 +16,8 @@
 ## 待完成
 
 * mix_agent_updater
-* *ix_agent_keeper
-* *ix_agent_network
+* mix_agent_keeper
+* mix_agent_network
 
 # 全局配置
 
@@ -112,7 +112,7 @@ push-log: true # 是否提交日志，一般只用于开发测试
 * mix_agent_keeper
 * control.sh
 * control.ps1
-* shawl.exe
+* shawl.exe windows平台使用的服务安排工具
 * config
 
 ## 以命令行运行

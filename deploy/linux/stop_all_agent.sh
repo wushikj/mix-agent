@@ -3,7 +3,7 @@
 echo '------------------------------------------------------------------------------------------'
 echo 'Copyright @2020 for Wushi (Fujian) Technology Co., Ltd'
 echo 'This shell script will (stop)kill all mix agent'
-echo 'Current working directory is:' $(pwd)
+echo "Current working directory is: $(pwd)"
 echo '------------------------------------------------------------------------------------------'
 
 # kill all mix agent
