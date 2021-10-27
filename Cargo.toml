@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "mix_agent_common",
+    "mix_agent_machine",
+    "mix_agent_cpu",
+    "mix_agent_memory",
+    "mix_agent_disk",
+    "mix_agent_process",
+    "mix_agent_api",
+    "mix_agent_directory",
+    "mix_agent_api",
+    "mix_agent_keeper",
+    "mix_agent_network",
+    "mix_agent_updater",
+    "mix_agent_service"
+]

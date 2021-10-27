@@ -1,0 +1,7 @@
+customer-id: 2acb32811b9c93f6d5d6e90440771398
+project-id: P20200008
+mix-endpoint: http://mix.wushiai.com
+mix-endpoint-key: 1234513abABqe131413
+keeper-check-cron: "0/10 * * * * ?"
+print-log-json: false
+env: dev

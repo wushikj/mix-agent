@@ -1,0 +1,11 @@
+cron: "0/5 * * * * *"
+services:
+  - name: AppReadiness
+    desc: 当用户初次登录到这台电脑和添加新应用时，使应用进入就绪可用的状态。
+    force_restart: true
+  - name: demo
+    desc: 这是音频视频控制传输协议服务
+    force_restart: false
+  - name: demo1
+    desc: 不存在的服务
+    force_restart: true

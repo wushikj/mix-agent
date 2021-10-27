@@ -1,0 +1,13 @@
+[package]
+name = "mix_agent_process"
+version = "0.1.0"
+authors = ["余亮华 <ylh@strongsoft.net>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mix_agent_common = { path = "../mix_agent_common" }
+sysinfo = "0.20.5"
+log = "0.4.14"
+serde = { version = "1.0.130", features = ["derive"] }

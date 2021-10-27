@@ -1,0 +1,2 @@
+cron: * 0/30 * * * * ?
+file_system: [ foo bar, baz ]
