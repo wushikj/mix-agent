@@ -1,14 +1,14 @@
 use access_json::JSONQuery;
-use chrono::{Date, DateTime, Datelike, Local, NaiveDate, NaiveDateTime, ParseResult, TimeZone};
+use chrono::{DateTime, Local, NaiveDateTime, ParseResult, TimeZone};
 use log::{error, info, warn};
 use mix_agent_common::mix_config::{init_logger, MixConfig};
-use mix_agent_common::{get_batch_id, get_local_ip, get_timestamp_millis, init_log, mix_config, post_log, GlobalConfig, Identity, Log, LogLevel, Monitor, Priority, Source, StripBom};
+use mix_agent_common::{init_log, mix_config, post_log, GlobalConfig, LogLevel, Monitor, StripBom};
 
 use evalexpr::*;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
-use std::any::Any;
-use std::collections::{BTreeMap, HashMap};
+
+use std::collections::{BTreeMap};
 use std::error::Error;
 use std::time::Duration;
 
@@ -460,7 +460,7 @@ fn check_targets(global_config: &GlobalConfig, agent_config: &ApiAgentConfig, to
     trs
 }
 
-fn create_target_result(token: &str, trs: &mut Vec<TargetResult>, target: &Target, global_config: &GlobalConfig) {
+fn create_target_result(token: &str, trs: &mut Vec<TargetResult>, target: &Target, _global_config: &GlobalConfig) {
     let mut target_result = TargetResult {
         name: target.name.as_str().to_string(),
         success: false,

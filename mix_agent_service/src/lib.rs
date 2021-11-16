@@ -1,9 +1,9 @@
 use log::{info, warn};
 use mix_agent_common::mix_config::{init_logger, MixConfig};
-use mix_agent_common::{init_log, mix_config, post_log, GlobalConfig, LogLevel, Monitor};
+use mix_agent_common::{Monitor};
 use serde::{Deserialize, Serialize};
 
-use std::ffi::OsStr;
+
 
 #[cfg(target_os = "windows")]
 use windows_service::service::{ServiceAccess, ServiceState, ServiceStatus};

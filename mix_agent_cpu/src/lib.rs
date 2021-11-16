@@ -1,6 +1,6 @@
-use log::{debug, error, info, warn};
+use log::{info};
 use mix_agent_common::mix_config::{init_logger, MixConfig};
-use mix_agent_common::{get_batch_id, get_local_ip, get_timestamp_millis, init_log, mix_config, post_log, GlobalConfig, Identity, Log, LogLevel, Monitor, Priority, Source};
+use mix_agent_common::{init_log, mix_config, post_log, GlobalConfig, LogLevel, Monitor};
 use serde::{Deserialize, Serialize};
 
 use sysinfo::{ProcessorExt, System, SystemExt};
