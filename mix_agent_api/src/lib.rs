@@ -1,5 +1,5 @@
 use access_json::JSONQuery;
-use chrono::{DateTime, Local, NaiveDateTime, ParseResult, TimeZone};
+use chrono::{Local, NaiveDateTime};
 use log::{error, info, warn};
 use mix_agent_common::mix_config::{init_logger, MixConfig};
 use mix_agent_common::{init_log, mix_config, post_log, GlobalConfig, LogLevel, Monitor, StripBom};
@@ -361,7 +361,7 @@ fn test_get_value_some() {
 #[test]
 fn test_get_value_none() {
     let none: Option<&str> = None;
-    let r = none.value();
+    let _r = none.value();
 }
 
 #[test]
@@ -371,6 +371,8 @@ fn test_parse_exp() {
 
 #[test]
 fn test_parse_date() {
+    use chrono::{TimeZone, DateTime, ParseResult};
+    
     let dt = Local.ymd(2020, 3, 6).and_hms(12, 0, 9);
     let t2: ParseResult<DateTime<Local>> = Local.datetime_from_str("2020-03-06T12:00:09", "%Y-%m-%dT%H:%M:%S");
     println!("{:?}", t2);
